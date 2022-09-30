@@ -23,3 +23,5 @@
 ### 3.4.1.2 constructor에서 꺼내기
 
 ### 3.4.1.3 2씩 올리기 (this.setState에 객체대신 함수인자 전달)
+
+### 3.4.1.4 this.setState 끝나고 특정 작업 실행
