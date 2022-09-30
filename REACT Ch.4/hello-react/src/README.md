@@ -7,3 +7,5 @@
 ### 4.2.2.3 버튼 누를때 comment값 공백으로 설정하기
 
 ### 4.2.3 임의 메서드
+
+### 4.2.3.2 property initializer syntax 사용(깔끔)
