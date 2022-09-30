@@ -12,3 +12,5 @@
 ### 2.4.6 바로 지정
 
 ### 2.4.7 className
+
+### 2.4.8 self-closing
