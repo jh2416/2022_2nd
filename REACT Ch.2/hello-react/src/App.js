@@ -1,14 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import {Fragment} from 'react';
+
 
 function App() {
-  const name = '리액트';
+  const name = '리액트'; //리액트 말고 다른 이름이면 '리액트가 아닙니다.'
   return (
-    <>
-      <h1>{name} 안녕!</h1>
-      <h2>잘 작동하니?</h2>
-    </>
+    <div>
+      {name ==='리액트'?(
+      <h1>리액트입니다.</h1>
+    ) : (
+      <h2>리액트가 아닙니다.</h2>
+    )}
+    </div>
   );
 }
 
