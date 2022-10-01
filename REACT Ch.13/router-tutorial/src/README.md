@@ -23,3 +23,5 @@
 ### 13.6.2 NavLink
 
 ### 13.6.3 NotFound 만들기
+
+### 13.6.4 Navigate 컴포
