@@ -13,3 +13,5 @@
 ### 8.4-2 useMemo사용
 
 ### 8.5 useCallback 사용한 최적화
+
+### 8.6 useRef 사용
