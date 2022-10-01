@@ -7,3 +7,5 @@
 ### 11.5.2 useReducer 사용
 
 ### 11.7 TodoList 컴포 최적화(React.memo)
+
+### 11.8.2 react-virtualized 사용한 최적화 준비(TodoList 수정)
