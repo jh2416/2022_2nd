@@ -19,3 +19,5 @@
 ### 13.5.2 index props
 
 ### 13.6.1 useNavigate
+
+### 13.6.2 NavLink
