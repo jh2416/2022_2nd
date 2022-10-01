@@ -5,3 +5,5 @@
 ### 11.5.1 useState 함수형 업데이트
 
 ### 11.5.2 useReducer 사용
+
+### 11.7 TodoList 컴포 최적화(React.memo)
