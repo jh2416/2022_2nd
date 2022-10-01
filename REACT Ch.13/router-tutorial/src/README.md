@@ -21,3 +21,5 @@
 ### 13.6.1 useNavigate
 
 ### 13.6.2 NavLink
+
+### 13.6.3 NotFound 만들기
