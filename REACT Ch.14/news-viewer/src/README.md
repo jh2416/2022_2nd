@@ -11,3 +11,5 @@
 ### 14.6.2 카테고리 지정
 
 ### 14,7,2 NewsPage 생성
+
+### 14.7.3 Categories에서 NavLink 사용
