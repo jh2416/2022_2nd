@@ -15,3 +15,5 @@
 ### 17.5.1 CounterContainer 만들기 여러가지 방법
 
 ### 17.5.2 TodosContainer만들기
+
+### 17.6.1 Redux-actions(리덕스 더 편하게)
