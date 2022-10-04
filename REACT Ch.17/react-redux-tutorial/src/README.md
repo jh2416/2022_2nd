@@ -27,3 +27,5 @@
 ### 17.7.4 TodosContainer hook으로 전환
 
 ### 17.7.5 useActions 유틸 hook 만들어 사용하기
+
+### 17.7.6 React.memo로 최적화(예제는 불필요한 최적화임)
