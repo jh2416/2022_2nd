@@ -25,3 +25,5 @@
 ### 17.7.2 useDispatch - 액션 디스패치 (useCallback이랑 같이 쓰는 거 습관)
 
 ### 17.7.4 TodosContainer hook으로 전환
+
+### 17.7.5 useActions 유틸 hook 만들어 사용하기
