@@ -23,3 +23,5 @@
 ### 17.7.1 useSelector - 상태조회
 
 ### 17.7.2 useDispatch - 액션 디스패치 (useCallback이랑 같이 쓰는 거 습관)
+
+### 17.7.4 TodosContainer hook으로 전환
