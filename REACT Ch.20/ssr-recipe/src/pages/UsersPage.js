@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import UsersContainer from "../containers/UsersContainer";
+import UsersContainer from "../containers/UserContainer";
 import UserPage from "./UserPage";
 
 const UsersPage = () => {
