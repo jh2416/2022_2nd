@@ -3,3 +3,5 @@
 ### 19.2.1 state로 코드 스플리팅
 
 ### 19.2.2 React.lazy와 Suspense 사용
+
+### 19.2.3 loadable components를 통한 코드 스플리팅
