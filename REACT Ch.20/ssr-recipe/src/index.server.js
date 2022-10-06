@@ -15,7 +15,7 @@ const manifest = JSON.parse(
   fs.readFileSync(path.resolve("/build/asset-manifest.json"), "utf8")
 );
 
-function createPage(root) {
+function createPage(root, stateScript) {
   return `<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -32,6 +32,7 @@ function createPage(root) {
     <body>
         <noscript>You need to enable Javascript to run this app.</noscript>
         <div id='root=>${root}</div>
+        ${stateScript}
         <script src="${manifest.files["main.js"]}"></script>
     </body>
 </html>;
@@ -69,17 +70,7 @@ const serverRender = async (req, res, next) => {
   }
   preloadContext.done = true;
   const root = ReactDOMServer.renderToString(jsx); // 렌더링을 합니다.
-  res.send(createPage(root)); // 결과물을 응답합니다.
+  const stateString = JSON.stringify(store.getState()).replace(/</g, "\u003c");
+  const stateScript = `<script>__PRELOADED_STATE__=${stateString}</script>`; //리덕스 초기상태를 스크립트로 주입
+  res.send(createPage(root, stateScript)); // 결과물을 응답합니다.
 };
-
-const serve = express.static(path.resolve("./build"), {
-  index: false, // "/"경로에서 index, html을 보여주지 않도록 설정
-});
-
-app.use(serve); //순서가 중요. serverRender전에 위치해야 함
-app.use(serverRender);
-
-// 5000 포트로 서버를 가동합니다.
-app.listen(5000, () => {
-  console.log("Running on http://localhost:5000");
-});
