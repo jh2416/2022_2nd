@@ -25,3 +25,5 @@
 ### 20.4.6 redux-saga코드 준비
 
 ### 20.4.7 user, userContainer 컴포넌트 준비
+
+### 20.4.8 redux-saga를 위한 서버 사이드 렌더링 작업
