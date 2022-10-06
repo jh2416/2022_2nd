@@ -15,9 +15,7 @@ const UserContainer = ({ id }) => {
 
   // 컨테이너 유효성 검사 후 return null을 해야 하는 경우에
   // null 대신 Preloader 반환
-  if (!user) {
-    return <Preloader resolve={() => dispatch(getUser(id))} />;
-  }
+  if (!user) return null;
   return <User user={user} />;
 };
 
