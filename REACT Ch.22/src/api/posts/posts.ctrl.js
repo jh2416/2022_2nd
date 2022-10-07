@@ -1,21 +1,15 @@
 import Post from '../../models/post';
 /*
-  POST /api/posts
-  {
-    title: '제목',
-    body: '내용',
-    tags: ['태그1', ‘태그2']
-  }
+  GET /api/posts/:id
 */
-export const write = async (ctx) => {
-  const { title, body, tags } = ctx.request.body;
-  const post = new Post({
-    title,
-    body,
-    tags,
-  });
+export const read = async (ctx) => {
+  const { id } = ctx.params;
   try {
-    await post.save();
+    const post = await Post.findById(id).exec();
+    if (!post) {
+      ctx.status = 404; // Not Found
+      return;
+    }
     ctx.body = post;
   } catch (e) {
     ctx.throw(500, e);
