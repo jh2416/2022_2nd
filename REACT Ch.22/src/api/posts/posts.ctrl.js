@@ -1,16 +1,12 @@
 import Post from '../../models/post';
 /*
-  GET /api/posts/:id
+  DELETE /api/posts/:id
 */
-export const read = async (ctx) => {
+export const remove = async (ctx) => {
   const { id } = ctx.params;
   try {
-    const post = await Post.findById(id).exec();
-    if (!post) {
-      ctx.status = 404; // Not Found
-      return;
-    }
-    ctx.body = post;
+    await Post.findByIdAndRemove(id).exec();
+    ctx.status = 204; // No Content (성공하기는 했지만 응답할 데이터는 없음)
   } catch (e) {
     ctx.throw(500, e);
   }
