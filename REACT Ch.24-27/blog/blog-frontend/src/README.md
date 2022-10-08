@@ -57,3 +57,5 @@
 ### 26.1.1 PostViewer UI 준비
 
 ### 26.1.2 API 연동하기
+
+### 26.2.1 PostList UI 준비하기
