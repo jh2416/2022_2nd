@@ -49,3 +49,5 @@
 ### 25.3 리덕스로 글쓰기 상태 관리
 
 ### 25.3.1 EditorContainer 만들기
+
+### 25.3.2 TagBoxContainer 만들기
