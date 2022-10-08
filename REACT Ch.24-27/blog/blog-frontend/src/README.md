@@ -47,3 +47,5 @@
 ### 25.2.1.1 WriteActionButtons 만들기
 
 ### 25.3 리덕스로 글쓰기 상태 관리
+
+### 25.3.1 EditorContainer 만들기
