@@ -5,7 +5,7 @@ import AuthForm from '../../components/auth/AuthForm';
 import { check } from '../../lib/api/auth';
 import { useNavigate } from 'react-router-dom';
 
-const LoginForm = ({ history }) => {
+const LoginForm = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -35,21 +35,13 @@ const LoginForm = ({ history }) => {
   };
 
   useEffect(() => {
-    if (authError) {
-      console.log('오류 발생');
-      console.log(authError);
-      setError('로그인 실패');
-      return;
-    }
-    if (auth) {
-      console.log('로그인 성공');
-      dispatch(check());
-    }
-  }, [auth, authError, dispatch]);
-
-  useEffect(() => {
     if (user) {
       navigate('/');
+      try {
+        localStorage.setItem('user', JSON.stringify(user));
+      } catch (e) {
+        console.log('localStorage is not working');
+      }
     }
   }, [navigate, user]);
 
